@@ -1,0 +1,559 @@
+/*! HTML5 Boilerplate v7.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+  /*** Mobile First Design  ***/
+
+/* General */
+@font-face {
+  font-family: 'Raleway';
+  src: url(../fonts/Raleway-Regular.ttf);
+}
+body {
+  color: #4D4B4B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header, main, footer {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  color: #4D4B4B;
+  margin-bottom: 20px;
+
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #4D4B4B;
+}
+span {
+
+  letter-spacing: -3px;
+}
+.divider {
+  width: 90%;
+  height: 2px;
+  background-color: #4D4B4B;
+  margin: 20px 0
+}
+
+/* Header */
+header {
+  height: 100%;
+  background-image: url(../img/hero-img-designByBossArielle.svg);
+  background-color: #0f116c; 
+  height: 500px; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+header #logo {
+  float: right;
+  width: 50px;
+  padding: 5%;
+}
+  /* Header - Hero */
+  .hero #heading-text {
+    margin: 12.5%;
+    width: 75%;
+  }
+
+/* Main */
+main {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+  /* Main - Mission */
+.mission h1, .mission p {
+  text-align: center;
+}
+
+  /* Main - Description-One */
+.description-one {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-direction: column;
+  margin-top: 40px;
+}
+.description-one img {
+  width: 100%;
+}
+.description-one h1 {
+  text-align: right;
+}
+.description-one p {
+  text-align: left;
+}
+
+  /* Main - Services */
+.services {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+.services #top-p {
+  padding-right: 15%;
+  text-align: left;
+} 
+.services .icons-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.services .icon {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.icon img {
+  width: 100%;
+}
+.services #bottom-p {
+  padding-left: 15%;
+  text-align: right;
+}
+
+  /* Main - Description-Two */
+.description-two {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+.description-two img {
+  width: 100%;
+}
+
+.description-two h1, .description-one p {
+  text-align: left;
+}  
+
+/* Footer */
+footer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+footer img {
+  width: 200%;
+  margin-bottom: -2px;
+}
+.footer {
+  background: #0f116c;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+footer .contact, footer .copyright {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .full-width {
+  width: 100%;
+}
+footer .divider {
+  background-color: #A22728;
+  width: 80%;
+  margin: 20px 0 0 0;
+  align-items: center;
+}
+  /* Footer - Contact */
+footer .contact h1 {
+  text-align: left;
+  color: #ffffff;
+}
+footer .contact p {
+  text-align: center;
+  color: #ffffff;
+}
+
+  /* Footer - Copyright */
+footer .copyright {
+  align-items: center;
+  margin-bottom: 5%;
+}
+footer .copyright p {
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 0;
+}
+footer #bossarielle-credit {
+  font-size: 10px;
+  margin: 0;
+}
+footer #bossarielle-logo {
+  height: 20px;
+  width: auto;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+  display: none !important;
+}
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+* Extends the .sr-only class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 768px) {
+  /* Style adjustments for Ipad and Desktop viewports */
+
+  header {
+    height: 850px;
+  }
+  .hero #heading-text {
+    width: 50%;
+    margin: 20% auto auto 15%;
+  }
+  .description-one, .description-two, footer .full-width {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+  }
+  .half-width {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  .divider {
+    visibility: hidden;
+  }
+  .description-one p {
+    padding-left: 7%;
+    text-align: right;
+  }
+  .description-two p {
+    padding-right: 7%;
+  }
+  .services .icons-display {
+    justify-content: space-around;
+    flex-direction: row;
+    margin-top: 1em;
+  }
+  .services .icon {
+    width: 20%;
+  }
+  footer img {
+    width: 125%;
+  }
+  footer .contact h1 {
+    text-align: center;
+  }
+  footer .divider {
+    visibility: visible;
+    width: 100%;
+    margin-top: 5%;
+  }
+  footer .copyright {
+    margin-bottom: 2%;
+  }
+  footer #bossarielle-credit {
+    font-size: 14px;
+  }
+  footer #bossarielle-logo {
+    height: 25px;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  main, footer .contact {
+    max-width: 1100px;
+  }
+  h1 {
+    font-size: 26px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  p {
+    font-size: 20px;
+  }
+  header #logo {
+    padding: 3%;
+  }
+  footer .copyright p {
+    font-size: 16px;
+  }
+  footer img {
+    width: 100%;
+  }
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+  pre {
+    white-space: pre-wrap !important;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  /*
+     * Printing Tables:
+     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
